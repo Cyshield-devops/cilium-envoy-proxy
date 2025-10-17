@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   test-cache-refresh:
-    timeout-minutes: 360
+    timeout-minutes: 720
     name: Build test cache and push images
     runs-on: ubuntu-latest
     steps:
@@ -64,7 +64,7 @@ jobs:
           tags: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/cilium-envoy:latest-testlogs
 
   build-cache-and-push-images:
-    timeout-minutes: 360
+    timeout-minutes: 720
     name: Build cache and push images
     runs-on: ubuntu-latest
     steps:
