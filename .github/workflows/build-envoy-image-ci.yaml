@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build-and-push-prs:
-    timeout-minutes: 360
+    timeout-minutes: 720
     name: Build and push multi-arch images
     runs-on: ${{ vars.PROXY_BUILD_GITHUB_RUNNER }}
     outputs:
