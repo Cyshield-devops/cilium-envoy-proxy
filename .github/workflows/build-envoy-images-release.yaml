@@ -119,4 +119,3 @@ jobs:
             docker.io/${{ secrets.DOCKERHUB_USERNAME }}/cilium-envoy:latest
             docker.io/${{ secrets.DOCKERHUB_USERNAME }}/cilium-envoy:${{ github.sha }}
             docker.io/${{ secrets.DOCKERHUB_USERNAME }}/cilium-envoy:${{ env.ENVOY_PATCH_RELEASE }}-${{ github.sha }}
-            
